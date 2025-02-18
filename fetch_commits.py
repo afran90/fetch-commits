@@ -9,7 +9,7 @@ if response.status_code == 200:
     for commit in recent_commits: 
         message = commit["commit"]["message"]
         author = commit["commit"]["author"]["name"]
-        print(f"Author: {author} \nMessage: {message} \n\n\n")
+        print(f"Author: {author} \nMessage: {message} \n\n")
 else:
     print(f"Error: {response.status_code}")
 
